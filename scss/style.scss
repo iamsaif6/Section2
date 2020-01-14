@@ -1,0 +1,57 @@
+.zigzag-text-bg-1{
+     background: url('../img/pic1.jpg');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.zigzag-text-bg-2{
+     background: url('../img/pic2.jpg');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+
+.zigzag-text{
+     padding: 90px 0;
+     position: relative;
+     z-index: 1;
+     color: #fff;
+}
+
+
+.btn{
+     margin-top: 20px;
+}
+
+.zigzag-text::after {
+     position: absolute;
+     content: '';
+     background: rgba(236, 8, 8, 0.779);
+     width: 256%;
+     height: 100%;
+     top: 0;
+     left: -160%;
+     transform: skew(16deg);
+     z-index: -1;
+     padding: 100px 0;
+   }
+
+   .zigzag-text-bg-1 .zigzag-text{
+        padding-right:90px ;
+   }
+   .zigzag-text-bg-2 .zigzag-text{
+        padding-left:90px ;
+   }
+
+
+   .zigzag-text-bg-2 .zigzag-text::after{
+        left: 0%;
+   }
+
+   .hr{
+        width: 100%;
+        background: #000;
+        z-index: 9999;
+        display: block;
+        height: 10px;
+   }
